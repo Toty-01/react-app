@@ -98,10 +98,12 @@ p {
     position: fixed;
     right: -100vw;
     bottom: 0;
+    width: 0;
     height: 100vh;
     padding: 2rem;
     visibility: hidden;
     background-color: rgb(33, 33, 33);
+    transition: all .5s ease-in-out;
   }
   .show-nav .navbar_links {
     width: 100vw;
@@ -116,6 +118,17 @@ p {
     display: block;
     padding: 1.5rem;
     font-size: 5vw;
+  }
+  .navbar_item:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 3vw;
+    height: 2px;
+    background-color: azure;
+  }
+  .navbar_item:last-child::after {
+    display: none;
   }
   .navbar_link::before {
     height: 1rem;
@@ -161,5 +174,34 @@ p {
   }
   .show-nav .burger-bar::after {
     transform: rotate(45deg);
+  }
+  .navbar_item {
+    transform: translatex(100vh);
+  }
+  .show-nav .navbar_item {
+    transform: translateX(0);
+  }
+  @keyframes effect {
+    0% {
+      transform: translateX(100vh);
+    }
+    25% {
+      transform: translateX(50vh);
+    }
+    50% {
+      transform: translateX(-10vh);
+    }
+    75% {
+      transform: translateX(5vh);
+    }
+    100% {
+      transform: translateX(0vh);
+    }
+  }
+  .show-nav .slideInDown-1 {
+    animation: effect 2s ease-in-out;
+  }
+  .show-nav .slideInDown-2 {
+    animation: effect 3s ease-in-out;
   }
 }

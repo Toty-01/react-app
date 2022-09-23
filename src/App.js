@@ -24,19 +24,19 @@ function App() {
           <span className='app-name'>My-app</span>
         </div>
           <ul className="navbar_links">
-            <li className="navbar_item">
+            <li className="navbar_item slideInDown-2">
               <Link to="/" className="navbar_link">Accueil</Link>
             </li>
-            <li className="navbar_item">
+            <li className="navbar_item slideInDown-1">
               <Link to="/About" className="navbar_link">About</Link>
             </li>
-            <li className="navbar_item">
+            <li className="navbar_item slideInDown-2">
               <Link to="/Galerie" className="navbar_link">Galerie</Link>
             </li>
-            <li className="navbar_item">
+            <li className="navbar_item slideInDown-1">
               <Link to="/Contact" className="navbar_link">Contact</Link>
             </li>
-            <li className="navbar_item">
+            <li className="navbar_item slideInDown-2">
               <Link to="/Entrainement" className="navbar_link">Entrainement</Link>
             </li>
           </ul>
