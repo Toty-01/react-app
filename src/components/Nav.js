@@ -6,8 +6,8 @@ const Nav = () => {
     <nav className='navbar'>
       
       <div className="navbar_logo">
-        <img src={logo} alt="" className="logo" />
-        <span className='app-name'>My-app</span>
+          <img src={logo} alt="" className="logo" />
+          <span className='app-name'>My-app</span>
       </div>
 
       <ul className="navbar_links">

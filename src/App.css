@@ -199,9 +199,9 @@ p {
     }
   }
   .show-nav .slideInDown-1 {
-    animation: effect 2s ease-in-out;
+    animation: effect 1.5s ease-in-out;
   }
   .show-nav .slideInDown-2 {
-    animation: effect 3s ease-in-out;
+    animation: effect 2s ease-in-out;
   }
 }
